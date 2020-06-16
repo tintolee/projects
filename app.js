@@ -5,9 +5,9 @@ const colors = [
 const btn = document.getElementById("btn")
 const color = document.querySelector('.color')
 
-changeBackground=()=> {
+goro=()=> {
     const randomNumber = Math.floor(Math.random()* colors.length);
     document.body.style.backgroundColor = colors[randomNumber],
     color.textContent= colors[randomNumber];
 }
-btn.addEventListener("click", changeBackground)
+btn.addEventListener("click", goro)
